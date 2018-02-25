@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/gambar"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="-5dp"
+            android:src="@drawable/aqua"
+            android:scaleType="fitXY"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/lblJudul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Aqua"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/lblDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:maxHeight="150dp"
+                android:text="Aqua adalah sebuah merek air minum dalam kemasan (AMDK) yang diproduksi oleh PT Aqua Golden Mississippi Tbk di Indonesia sejak tahun 1973. Selain di Indonesia, Aqua juga dijual di Malaysia, Singapura, dan Brunei." />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/isiBatre"
+                    android:layout_width="220dp"
+                    android:layout_height="210dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_battery" />
+
+                <TextView
+                    android:id="@+id/Status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/isiBatre"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="18sp"
+                    android:text="LITER"/>
+
+                <Button
+                    android:id="@+id/minus"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/isiBatre"
+                    android:background="@drawable/ic_minus" />
+
+                <Button
+                    android:id="@+id/plus"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/isiBatre"
+                    android:background="@drawable/ic_plus" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
